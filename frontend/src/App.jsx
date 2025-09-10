@@ -25,8 +25,9 @@ function App() {
 
   return (
     <>
-    <Nav/>
+   
         <BrowserRouter>
+           <Nav/>
                  <Routes>
           <Route path='/' element={<AiGen/>}/>
           <Route path='/about' element={<About/>}/>
@@ -41,9 +42,9 @@ function App() {
             <Route path='/delete/:id' element={<DeleteBlog/>}></Route>
             <Route path='/learn' element={<LearnBlog/>}></Route> */}
      </Routes>
-        
+            <FooterComponent/>
         </BrowserRouter>
-     <FooterComponent/>
+ 
         
 
 
