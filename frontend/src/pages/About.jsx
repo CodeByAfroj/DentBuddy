@@ -266,7 +266,7 @@ const About = () => {
             make learning dentistry simpler, smarter, and more enjoyable for
             every student."
           </blockquote>
-          <p className="mt-4 font-semibold text-blue-500">— [Founders Name]</p>
+          <p className="mt-4 font-semibold text-blue-500">— Alfiya Patel</p>
           <p className="text-sm opacity-70">Founder & BDS Student</p>
         </motion.div>
 
