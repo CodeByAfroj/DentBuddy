@@ -4,7 +4,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Loader from './components/Loader'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import FooterComponent from "./components/FooterComponent"
@@ -26,20 +26,23 @@ function App() {
   return (
     <>
     <Nav/>
-     <Routes>
+        <BrowserRouter>
+                 <Routes>
           <Route path='/' element={<AiGen/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={ <Contact/> }/>
           <Route path='/products' element={ <Products/> }/>
 
 
-            <Route path='/' element={<Home/>}></Route>
-            <Route path='/create' element={<Create/>}></Route>
+ 
+            {/* <Route path='/create' element={<Create/>}></Route>
             <Route path='/show/:id' element={<ShowBlog/>}></Route>
             <Route path='/edit/:id' element={<EditBlog/>}></Route>
             <Route path='/delete/:id' element={<DeleteBlog/>}></Route>
-            <Route path='/learn' element={<LearnBlog/>}></Route>
+            <Route path='/learn' element={<LearnBlog/>}></Route> */}
      </Routes>
+        
+        </BrowserRouter>
      <FooterComponent/>
         
 
