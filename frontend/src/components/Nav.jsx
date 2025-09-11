@@ -176,22 +176,23 @@ const Nav = () => {
       } bg-white dark:bg-gray-900`}
     >
       {/* Logo / Brand */}
-      <NavbarBrand href="/" className="m-2 flex items-center gap-3">
-        <div className="flex items-center justify-center w-12 h-12 rounded-full overflow-hidden">
-          <img
-            src={darkMode ? toothwhite : tooth}
-            alt="DentBuddy Logo"
-            className="object-contain text-white w-12 h-12"
-          />
-        </div>
-        <span
-          className={`text-2xl font-bold tracking-wide ${
-            darkMode ? "text-white" : "text-blue-900"
-          }`}
-        >
-          Dent<span className="text-blue-500">Buddy</span>
-        </span>
-      </NavbarBrand>
+     <Link to="/" className="m-2 flex items-center gap-3">
+  <div className="flex items-center justify-center w-12 h-12 rounded-full overflow-hidden">
+    <img
+      src={darkMode ? toothwhite : tooth}
+      alt="DentBuddy Logo"
+      className="object-contain text-white w-12 h-12"
+    />
+  </div>
+  <span
+    className={`text-2xl font-bold tracking-wide ${
+      darkMode ? "text-white" : "text-blue-900"
+    }`}
+  >
+    Dent<span className="text-blue-500">Buddy</span>
+  </span>
+</Link>
+
 
       {/* Mobile Toggle */}
       <div className="flex items-center gap-2 md:hidden">

@@ -5,8 +5,8 @@ import flowbiteReact from "flowbite-react/plugin/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), flowbiteReact()],
-  base: "/", // 👈 Correct for root hosting
+  base: "/",   // ✅ must be this (never "./")
   build: {
-    outDir: "dist", // Render expects this
+    outDir: "dist",
   },
 });
