@@ -333,6 +333,8 @@ import {
   FooterTitle,
 } from "flowbite-react";
 
+import { Mail, Phone, MapPin, Info, FileText } from "lucide-react";
+
 import {
   BsFacebook,
   BsGithub,
@@ -357,7 +359,7 @@ function FooterComponent() {
   return (
     <Footer
       container
-      className="bg-blue-900 dark:bg-gray-900 text-white dark:text-gray-200 rounded-none pt-16 pb-8 transition-colors duration-300"
+      className="bg-blue-900 dark:bg-gray-900 text-white dark:text-gray-200 rounded-none pt-16 pb-8 transition-colors duration-300 px-9"
     >
 
    
@@ -374,7 +376,7 @@ function FooterComponent() {
     <img
       src={tooth}
       alt="DentBuddy Logo"
-      className="h-12 w-9 rounded-md drop-shadow-lg"
+      className="h-12 w-8 rounded-md drop-shadow-lg"
     />
   </div>
   <span className="text-2xl ml-2 font-bold tracking-wide text-white dark:text-gray-100">
@@ -390,34 +392,56 @@ function FooterComponent() {
             </p>
 
             {/* Social Icons Row */}
-            <div className="flex space-x-4 mt-4">
-              {[BsFacebook, BsInstagram, BsTwitter].map((Icon, idx) => (
-                <div
-                  key={idx}
-                  className="bg-blue-800 dark:bg-gray-700 p-2 rounded-full cursor-pointer 
-                  hover:scale-110 hover:bg-blue-700 dark:hover:bg-gray-600 
-                  transition-all duration-300 ease-in-out"
-                >
-                  <Icon className="text-white w-5 h-5" />
-                </div>
-              ))}
-            </div>
+
+
+<div className="flex space-x-4 mt-4">
+  <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=mulaniafroj26@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-blue-800 dark:bg-gray-700 p-2 rounded-full cursor-pointer 
+                 hover:scale-110 hover:bg-blue-700 dark:hover:bg-gray-600 
+                 transition-all duration-300 ease-in-out"
+>
+  <Mail className="text-white w-5 h-5" />
+</a>
+
+  {[ 
+
+    { Icon: Phone, link: "tel:+9199212928678" ,external: true },
+    { Icon: Info, link: "/about",external: false },
+ 
+  ].map(({ Icon, link }, idx) => (
+    <a
+      key={idx}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-800 dark:bg-gray-700 p-2 rounded-full cursor-pointer 
+                 hover:scale-110 hover:bg-blue-700 dark:hover:bg-gray-600 
+                 transition-all duration-300 ease-in-out"
+    >
+      <Icon className="text-white w-5 h-5" />
+    </a>
+  ))}
+</div>
+
           </div>
 
           {/* Quick Links */}
           <div data-aos="fade-up" data-aos-delay="100">
             <FooterTitle title="Quick Links" className="text-white" />
             <FooterLinkGroup col>
-              <Link to="/" className="text-blue-200 hover:text-white transition-colors">
+              <Link onClick={scrollToTop}  to="/" className="text-blue-200 hover:text-white transition-colors">
                 Home
               </Link>
-              <Link to="/about" className="text-blue-200 hover:text-white transition-colors">
+              <Link onClick={scrollToTop} to="/about" className="text-blue-200 hover:text-white transition-colors">
                 About
               </Link>
-              <Link to="/contact" className="text-blue-200 hover:text-white transition-colors">
+              <Link onClick={scrollToTop}  to="/contact" className="text-blue-200 hover:text-white transition-colors">
                 Contact
               </Link>
-              <Link to="/products" className="text-blue-200 hover:text-white transition-colors">
+              <Link onClick={scrollToTop}  to="/products" className="text-blue-200 hover:text-white transition-colors">
                 Practical Kits
               </Link>
             </FooterLinkGroup>
@@ -427,10 +451,10 @@ function FooterComponent() {
           <div data-aos="fade-up" data-aos-delay="200">
             <FooterTitle title="Resources" className="text-white" />
             <FooterLinkGroup col>
-              <Link to="/materials" className="text-blue-200 hover:text-white transition-colors">
+              <Link onClick={scrollToTop}   to="/materials" className="text-blue-200 hover:text-white transition-colors">
                 Study Materials
               </Link>
-              <Link to="/kits" className="text-blue-200 hover:text-white transition-colors">
+              <Link onClick={scrollToTop}  to="/products" className="text-blue-200 hover:text-white transition-colors">
                 Practical Kits
               </Link>
             </FooterLinkGroup>
@@ -448,19 +472,38 @@ function FooterComponent() {
             year={new Date().getFullYear()}
             className="text-blue-300 dark:text-gray-400"
           />
-          <div className="mt-4 flex space-x-4 sm:mt-0 sm:justify-center">
-            {[BsFacebook, BsInstagram, BsTwitter, BsGithub, BsLinkedin].map(
-              (Icon, idx) => (
-                <FooterIcon
-                  key={idx}
-                  as={Link}
-                  to="/"
-                  icon={Icon}
-                  className="text-white hover:scale-110 transition-transform duration-300 ease-in-out hover:text-blue-400 dark:hover:text-blue-500"
-                />
-              )
-            )}
-          </div>
+
+          <div className="flex space-x-4 mt-4">
+  <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=mulaniafroj26@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-blue-800 dark:bg-gray-700 p-2 rounded-full cursor-pointer 
+                 hover:scale-110 hover:bg-blue-700 dark:hover:bg-gray-600 
+                 transition-all duration-300 ease-in-out"
+>
+  <Mail className="text-white w-5 h-5" />
+</a>
+
+  {[ 
+
+    { Icon: Phone, link: "tel:+9199212928678" ,external: true },
+    { Icon: Info, link: "/about",external: false },
+ 
+  ].map(({ Icon, link }, idx) => (
+    <a
+      key={idx}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-800 dark:bg-gray-700 p-2 rounded-full cursor-pointer 
+                 hover:scale-110 hover:bg-blue-700 dark:hover:bg-gray-600 
+                 transition-all duration-300 ease-in-out"
+    >
+      <Icon className="text-white w-5 h-5" />
+    </a>
+  ))}
+</div>
         </div>
       </div>
     </Footer>

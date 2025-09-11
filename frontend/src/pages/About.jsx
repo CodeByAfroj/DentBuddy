@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-
+import "../App.css"
 const About = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
@@ -11,6 +11,8 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800  py-8 transition-colors duration-500">
+
+
       <div className="px-5 md:px-10">
         {/* Header */}
         <motion.h1
@@ -26,7 +28,7 @@ const About = () => {
         </motion.h1>
 
         {/* Intro */}
-        <motion.div
+        {/* <motion.div
           className="max-w-5xl mx-auto text-lg leading-relaxed text-center"
           variants={fadeInUp}
           initial="hidden"
@@ -51,7 +53,35 @@ const About = () => {
             designed to make learning simpler, smarter, and more accessible for
             every dental student.
           </p>
-        </motion.div>
+        </motion.div> */}
+
+        {/* Intro */}
+<motion.div
+  className="dark:bg-gray-900  max-w-5xl mx-auto text-lg leading-relaxed text-center space-y-6"
+  variants={fadeInUp}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+>
+  <p className=" dark:bg-gray-800  p-4 rounded-xl shadow-sm">
+    DentBuddy was born out of a deep understanding of the struggles dental students face —
+    endless lectures, piles of notes, costly kits, and the pressure of practical exams. 
+    As a dedicated BDS student, our founder experienced these challenges firsthand and envisioned 
+    a platform that could bridge the gap between learning and practical application.
+  </p>
+
+ <p>
+  DentBuddy is more than just a brand — it’s a trusted partner in your journey through dentistry. 
+  We provide{" "}
+  <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-teal-400 to-green-400 gradient-animate">
+    practical kits, concise notes, and essential tools
+  </span>{" "}
+  designed to make learning simpler, smarter, and more accessible for every dental student.
+</p>
+
+</motion.div>
+
 
         {/* Mission & Vision */}
         <div className="max-w-6xl mx-auto mt-16 grid md:grid-cols-2 gap-8">
@@ -95,7 +125,7 @@ const About = () => {
             make learning dentistry simpler, smarter, and more enjoyable for
             every student."
           </blockquote>
-          <p className="mt-4 font-semibold text-blue-500">— Alfiya Patel</p>
+          <p className="mt-4 font-semibold text-blue-500 text-md">— Alfiya Patel</p>
           <p className="text-sm opacity-70">Founder & BDS Student</p>
         </motion.div>
 
@@ -135,29 +165,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <motion.div
-          className="text-center mt-20"
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 0}}
-        >
-          <h2 className="text-3xl font-bold mb-4">Join the DentBuddy Community</h2>
-          <p className="max-w-2xl mx-auto opacity-80 mb-6">
-            Whether you’re preparing for exams, setting up your first clinical
-            kit, or just starting your journey in dentistry, DentBuddy is here
-            to make the path less overwhelming and more rewarding.
-          </p>
-          <motion.button
-            className="px-6 py-3 rounded-full font-semibold shadow-lg bg-blue-600 hover:bg-blue-500 text-white transition-all"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get Started
-          </motion.button>
-        </motion.div>
+    
       </div>
     </div>
   );

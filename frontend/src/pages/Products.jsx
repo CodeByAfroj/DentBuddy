@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 import axios from "axios";
+import { BsArrowBarDown, BsArrowDown, BsArrowDownRightSquare, BsGraphDownArrow } from "react-icons/bs";
 
 
 const FeatureBox = ({ products = [] }) => {
@@ -306,9 +307,39 @@ const Products = () => {
   }
 ];
 
+ const scrolldown=()=>{
+      window.scrollTo({
+     top: document.body.scrollHeight,
+      behavior: "smooth", // smooth scrolling
+    });
+ }
+
+ 
+
+
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-6 py-12">
+    <div className="flex flex-col  items-center justify-center gap-8 px-6 py-12">
+    
+<div className="text-center space-y-3">
+  {/* Heading */}
+  <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+    Looking to buy? <span className="text-blue-500">Get in touch with us!</span>
+  </h2>
+
+  {/* Subtext + Scroll Button */}
+  <div className="flex items-center justify-center gap-3 text-gray-600 dark:text-gray-300">
+    <span className="text-lg">Contact details are below</span>
+    <span
+      onClick={scrolldown}
+      className="p-2 dark:bg-gray-800  rounded-full cursor-pointer
+                 shadow-md"
+    >
+      <BsArrowDown className="w-5 h-5  text-blue-400" />
+    </span>
+  </div>
+</div>
+
       {/* First Box */}
       <FeatureBox products={products} />
 
