@@ -475,7 +475,7 @@ function FooterComponent() {
 
           <div className="flex space-x-4 mt-4">
   <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=mulaniafroj26@gmail.com"
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=dentbuddy01@gmail.com"
   target="_blank"
   rel="noopener noreferrer"
   className="bg-blue-800 dark:bg-gray-700 p-2 rounded-full cursor-pointer 

@@ -117,7 +117,7 @@ const fadeInUp = {
     <h2 className="text-3xl lg:mt-50  font-bold text-gray-800 dark:text-gray-100">
       Get in Touch
     </h2>
-    <p className="text-gray-600 dark:text-gray-400">
+    <p className="text-gray-800 dark:text-gray-300">
       Have questions or need assistance? Reach out to us through the form or
       use the details below.
     </p>
