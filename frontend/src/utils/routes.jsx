@@ -2,6 +2,7 @@
 import Home from "../pages/AiGen";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Products from "../pages/Products";
 import NotFound from "../pages/NotFound";
 
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
   {
     path: "/contact",
     element: <Contact />,
+    name: "Contact",
+  },
+   {
+    path: "/products",
+    element: <Products/>,
     name: "Contact",
   },
   {

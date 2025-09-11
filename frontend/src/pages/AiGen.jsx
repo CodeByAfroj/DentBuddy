@@ -807,7 +807,7 @@ const AiGen = () => {
               <p className="text-base md:text-lg text-gray-800 dark:text-gray-200 mb-8 max-w-lg mx-auto md:mx-0">
                 Everything a BDS first-year student needs – study materials, practical kits, and expert guidance – all in one place.
               </p>
-              <div className="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4">
+              <div className="flex flex-col sm:flex-row sm:justify-center  gap-4">
                 <Link
                   to="/products"
                   className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-medium text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
@@ -816,13 +816,7 @@ const AiGen = () => {
                   Explore Our Kits{" "}
                   <ChevronRight className="ml-2 h-5 w-5 inline" />
                 </Link>
-                <button
-                  className="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-300 hover:bg-blue-50 dark:hover:bg-gray-700 px-6 md:px-8 py-3 md:py-4 rounded-lg font-medium text-lg transition-colors"
-                  data-aos="zoom-in"
-                  data-aos-delay="200"
-                >
-                  View Resources
-                </button>
+               
               </div>
             </div>
 

@@ -8,12 +8,13 @@
 // import About from './pages/About'
 // import Contact from './pages/Contact'
 // import FooterComponent from "./components/FooterComponent"
-
-
+// import Create from "./pages/CreateBlog"
+// import Edit from "./pages/EditBlog"
 
 // import AiGen from './pages/AiGen'
 
 // import Products from './pages/Products'
+// import Home from "./pages/Home";
 
 
 // function App() {
@@ -25,17 +26,17 @@
 //         <BrowserRouter>
 //            <Nav/>
 //                  <Routes>
-//           <Route path='/' element={<AiGen/>}/>
+//           <Route path='/' element={<Home/>}/>
 //           <Route path='/about' element={<About/>}/>
 //           <Route path='/contact' element={ <Contact/> }/>
 //           <Route path='/products' element={ <Products/> }/>
 
 
  
-//             {/* <Route path='/create' element={<Create/>}></Route>
-//             <Route path='/show/:id' element={<ShowBlog/>}></Route>
-//             <Route path='/edit/:id' element={<EditBlog/>}></Route>
-//             <Route path='/delete/:id' element={<DeleteBlog/>}></Route>
+//             <Route path='/create' element={<Create/>}></Route>
+//             {/* <Route path='/show/:id' element={<ShowBlog/>}></Route> */}
+//             <Route path='/edit/:id' element={<Edit/>}></Route>
+//             {/* <Route path='/delete/:id' element={<DeleteBlog/>}></Route>
 //             <Route path='/learn' element={<LearnBlog/>}></Route> */}
 //      </Routes>
 //         <FooterComponent/>
@@ -53,10 +54,11 @@
 
 
 
-// import './App.css'
 
 
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+
 
 import React from "react";
 

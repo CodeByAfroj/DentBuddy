@@ -191,7 +191,7 @@ const FeatureBox = ({ products = [] }) => {
     </div> */}
 
 
-
+ {/* fianal */}
 
 <div className="w-full px-4 py-6">
   {products.length > 0 ? (
@@ -200,8 +200,7 @@ const FeatureBox = ({ products = [] }) => {
         <div
           key={item._id || idx}
           className="bg-white dark:bg-gray-800 rounded-xl shadow-md dark:shadow-gray-700 hover:shadow-xl dark:hover:shadow-gray-600 transition-shadow duration-300 cursor-pointer flex flex-col items-center text-center"
-        >
-          {/* Product Image (fills container) */}
+>
           <div className="w-full aspect-[4/5] overflow-hidden rounded-t-xl">
             <img
               src={item.imageUrl}
@@ -210,7 +209,7 @@ const FeatureBox = ({ products = [] }) => {
             />
           </div>
 
-          {/* Product Title */}
+         
           <h3 className="mt-2 mb-1 px-2 text-sm sm:text-base md:text-lg font-semibold text-gray-900 dark:text-gray-100 line-clamp-2">
             {item.title}
           </h3>
@@ -232,18 +231,81 @@ const FeatureBox = ({ products = [] }) => {
 };
 
 const Products = () => {
- const [products, setProducts] = useState([]);
-  // Fetch all products
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/api/showall")
-      .then((response) => {
-        setProducts(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+ const products = [
+  {
+    title: "H&E Pencils",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757089376/uploads/wmff1u6acg4urmonm5xf.jpg"
+  },
+  {
+    title: "Knife",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608718/uploads/ioblvhqr0qhsufnfo4ze.jpg"
+  },
+  {
+    title: "Enamel Tray",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757337273/uploads/b0dcs4bg2qixw6dvz2ai.jpg"
+  },
+  {
+    title: "Lacron Carver",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757607730/uploads/uwalgghklsnpvbqaha4t.jpg"
+  },
+  {
+    title: "Bond papers",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608295/uploads/khobrwisyfv7tuoy0sii.webp"
+  },
+  {
+    title: "Wax",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608467/uploads/i68xdwkhcyixgvwjclgf.webp"
+  },
+  {
+    title: "Straight and Curved Spatula",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608571/uploads/mheyzo6ljhkqxfqhwjdc.webp"
+  },
+  {
+    title: "Spacer Wax",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608617/uploads/uv8tlbzkxjpy6gesf4yb.webp"
+  },
+  {
+    title: "Cotton Gauze",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608667/uploads/aek77lclojoemizthrzw.webp"
+  },
+  {
+    title: "Gloves",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608837/uploads/fhy8hl6jz26zejbdindy.jpg"
+  },
+  {
+    title: "Rubber Bowls",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608876/uploads/arg4x9a56dqsfwutvafh.jpg"
+  },
+  {
+    title: "Rubber Bowl with S&C Spatula",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608911/uploads/f6v0b4ylk80bgg5ziwgs.jpg"
+  },
+  {
+    title: "Mackintosh Sheet",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757608987/uploads/dxd5jdzpejx1rfrnjzyd.jpg"
+  },
+  {
+    title: "Modeling Wax",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757609041/uploads/qbzsnejpjkkahhd1ndcs.jpg"
+  },
+  {
+    title: "Wax Knife",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757609087/uploads/kxawle2ldq9vw8mzgo57.jpg"
+  },
+  {
+    title: "Hot Plate",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757609180/uploads/qcefdbrkhlnmjbbqgvlb.jpg"
+  },
+  {
+    title: "Bond Papers",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757609222/uploads/xhx58zojerth90tjpkii.jpg"
+  },
+  {
+    title: "Carver",
+    imageUrl: "https://res.cloudinary.com/dlsobs4zm/image/upload/v1757609349/uploads/ompyoriaxxyzv2emlxew.jpg"
+  }
+];
+
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-6 py-12">

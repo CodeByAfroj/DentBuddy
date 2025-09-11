@@ -54,7 +54,7 @@ const CreateProduct = () => {
   return (
     <>
       <BackButton />
-      <div className="h-screen w-screen items-center">
+      <div className=" dark:text-gray-300 dark:bg-gray-900 h-screen w-screen items-center">
         <div className="h-screen flex justify-center items-center">
           <form
             onSubmit={handleForm}

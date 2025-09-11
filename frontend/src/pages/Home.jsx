@@ -509,33 +509,35 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800 font-sans">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center px-6 py-28 bg-gradient-to-r from-blue-50 to-teal-50">
-        <motion.h1
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-6xl font-extrabold leading-tight text-gray-900 text-wrap">
-            🦷 Premium Dental Kits for Professionals
-          </h1>
-        </motion.h1>
-        <p className="mt-6 text-lg text-gray-600 max-w-2xl">
-          <TextType
-            className="text-2xl font-semibold text-blue-700"
-            text={["One Kit.", " Every Instrument.", " Zero Hassle."]}
-            typingSpeed={70}
-            pauseDuration={1500}
-            showCursor={true}
-            cursorCharacter="|"
-          />
-        </p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          className="mt-10 px-10 py-4 rounded-full bg-blue-600 text-white text-lg font-semibold shadow-lg hover:bg-blue-700 transition-all duration-300"
-        >
-          Start Shopping
-        </motion.button>
-      </section>
+    <section className="flex flex-col items-center justify-center text-center px-6 py-28 bg-gradient-to-r from-blue-50 to-teal-50">
+  <motion.h1
+    initial={{ y: -50, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.8 }}
+    className="text-6xl font-extrabold leading-tight text-gray-900 text-wrap"
+  >
+    🦷 Premium Dental Kits for Professionals
+  </motion.h1>
+
+  <div className="mt-6 text-lg text-gray-600 max-w-2xl">
+    <TextType
+      className="text-2xl font-semibold text-blue-700"
+      text={["One Kit.", " Every Instrument.", " Zero Hassle."]}
+      typingSpeed={70}
+      pauseDuration={1500}
+      showCursor={true}
+      cursorCharacter="|"
+    />
+  </div>
+
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    className="mt-10 px-10 py-4 rounded-full bg-blue-600 text-white text-lg font-semibold shadow-lg hover:bg-blue-700 transition-all duration-300"
+  >
+    Start Shopping
+  </motion.button>
+</section>
+
 
       {/* Product Section */}
       <section className="px-10 py-20">
