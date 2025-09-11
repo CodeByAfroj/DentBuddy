@@ -58,7 +58,8 @@
 
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import react from 'react'
+import React from "react";
+
 
 import './App.css'
 
