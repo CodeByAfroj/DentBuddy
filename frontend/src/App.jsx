@@ -4,7 +4,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Loader from './components/Loader'
-import { BrowserRouter,Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Route, Routes } from 'react-router-dom'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import FooterComponent from "./components/FooterComponent"
