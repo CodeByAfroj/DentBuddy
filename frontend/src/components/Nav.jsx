@@ -219,7 +219,7 @@ const Nav = () => {
 
       {/* Navbar Links */}
       <NavbarCollapse
-        className={`transition-all duration-500 ${
+        className={`transition-all duration-500 leading-relaxed text-center ${
           isOpen ? "block" : "hidden"
         } md:flex md:items-center md:gap-6`}
       >
@@ -230,7 +230,7 @@ const Nav = () => {
         ].map((link, idx) => (
           <Link
             key={idx}
-            className={`font-medium py-2 min-md:text-md transition-colors ${
+            className={`font-medium py-2   hover:outline-1 hover:rounded-md min-md:text-md transition-colors ${
               darkMode
                 ? "text-white hover:text-blue-400"
                 : "text-blue-900 hover:text-blue-600"
