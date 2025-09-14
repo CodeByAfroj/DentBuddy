@@ -70,8 +70,17 @@ import routes from "./utils/routes";
 
 import FooterComponent from "./components/FooterComponent"
 import Nav from './components/Nav'
-
+import ReactGA from "react-ga4";
 function App() {
+
+
+   useEffect(() => {
+    // Initialize Google Analytics with your Measurement ID
+    ReactGA.initialize("G-QHNZ0E7W7Q"); 
+
+    // Send first pageview when the app loads
+    ReactGA.send("pageview");
+  }, []);
   return (
     
   <BrowserRouter>
