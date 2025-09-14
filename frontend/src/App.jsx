@@ -71,6 +71,7 @@ import routes from "./utils/routes";
 import FooterComponent from "./components/FooterComponent"
 import Nav from './components/Nav'
 import ReactGA from "react-ga4";
+import { useEffect } from "react";
 function App() {
 
 
